@@ -1,0 +1,21 @@
+local data = [[
+]]
+
+local currentUser = getUsername()
+local found = false
+local messageBox = MessageBox.new()
+
+for username in data:gmatch("[^\n]+") do
+    if username == currentUser then
+        found = true
+        break
+    end
+end
+
+if not found then
+    messageBox.title = "License Error"
+    messageBox.description = 'Your username is not registered! (' .. tostring(currentUser) .. ')'
+    messageBox:send()
+else
+    print('Welcome ' .. currentUser .. ', running script...')
+end
