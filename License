@@ -20,3 +20,5 @@ if not found then
 else
     print('Welcome ' .. currentUser .. ', running script...')
 end
+
+return found
