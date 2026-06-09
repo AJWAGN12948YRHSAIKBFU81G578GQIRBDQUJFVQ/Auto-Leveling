@@ -1,5 +1,6 @@
 local data = [[
 LUCIb4w8Ru4RN9Y1
+napu
 ]]
 
 local currentUser = getUsername()
