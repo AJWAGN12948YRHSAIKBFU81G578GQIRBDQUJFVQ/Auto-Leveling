@@ -2,6 +2,7 @@ local data = [[
 napu
 Asyra111
 Gacorrus
+sanuuls1
 ]]
 
 local currentUser = getUsername()
